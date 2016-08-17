@@ -5,6 +5,9 @@ app.use(express.static(__dirname + "/ContactList"))
 
 app.get('contactlist', function(req, res){
   console.log("GET request received!");
+  db.contactlist.find(function(err, docs){
+    console.log(docs);
+  })
 })
 
 app.listen(3000);
