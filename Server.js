@@ -7,6 +7,7 @@ app.get('contactlist', function(req, res){
   console.log("GET request received!");
   db.contactlist.find(function(err, docs){
     console.log(docs);
+    res.json(docs);
   })
 })
 
