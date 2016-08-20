@@ -9,4 +9,8 @@ app.controller('MainController',['$scope',function($scope){
     $scope.contactlist = res;
     $scope.contact = "";
   })
+
+  $scope.addContact = function () {
+    console.log($scope.contact);
+  }
 }]);
