@@ -12,6 +12,8 @@ app.controller('MainController',['$scope',function($scope){
 
   $scope.addContact = function () {
     console.log($scope.contact);
-    $http.post('/contactlist', $scope.contact).success(function(res){});
+    $http.post('/contactlist', $scope.contact).success(function(res){
+      console.log(res);
+    });
   }
 }]);
