@@ -36,7 +36,11 @@
               <button clas="btn btn-info" ng-click="update()">Update</button>
             </td>
           </tr>
-          <tr ng-repeat = "contact in contactlist"></tr>
+          <tr ng-repeat = "contact in contactlist">
+            <td>
+              {{ contact.name }}
+            </td>
+          </tr>
         </tbody>
       </table>
 
