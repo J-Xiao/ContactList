@@ -11,5 +11,9 @@ app.get('contactlist', function(req, res){
   })
 })
 
+app.post('/contactlist', function (req, res){
+  console.log(req.body);
+})
+
 app.listen(3000);
 console.log('Server running on port 3000')
