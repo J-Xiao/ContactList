@@ -46,6 +46,9 @@
             <td>
               {{ contact.number }}
             </td>
+            <td>
+              <button class="btn btn-danger" ng-click="remove(contact._id)">Delete</button>
+            </td>
           </tr>
         </tbody>
       </table>
