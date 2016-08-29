@@ -19,4 +19,8 @@ app.controller('MainController',['$scope',function($scope){
       refresh();
     });
   }
+
+  $scope.remove = function (id) {
+    console.log(id);
+  }
 }]);
