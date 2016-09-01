@@ -22,5 +22,6 @@ app.controller('MainController',['$scope',function($scope){
 
   $scope.remove = function (id) {
     console.log(id);
+    $http.delete('/contactlist' + id)
   }
 }]);
