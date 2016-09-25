@@ -24,5 +24,10 @@ app.controller('MainController',['$scope',function($scope){
     console.log(id);
     $http.delete('/contactlist' + id).success(function (res) {
       refresh();
-  });
+    });
+  }
+
+  $scope.edit = function (id) {
+    console.log(id);
+  }
 }]);
